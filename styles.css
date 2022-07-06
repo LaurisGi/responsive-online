@@ -1,0 +1,225 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    width: 100%;
+}
+
+.section-wrapper {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.container-gallery {
+    position: relative;
+    display:inline-block;
+    justify-content: center;
+    background-color: rgb(230, 20, 20);
+    text-align: center;
+    border-radius: 0.5rem;
+    height: 19rem;
+}
+
+.section-wrapper .container-gallery:nth-child(4n+1) {
+    background-color: rgb(11, 223, 22);
+}
+
+.section-wrapper .container-gallery:nth-child(4n+2) {
+    background-color: rgb(61, 14, 233);
+}
+
+.section-wrapper .container-gallery:nth-child(4n+3) {
+    background-color: rgb(233, 14, 149);
+}
+
+
+.container-gallery img {
+    filter: opacity(30%);
+    border-radius: 0.5rem;
+    height: 19rem;
+}
+
+.container-gallery img:hover {
+    filter: none;
+    border-radius: 0.5rem;
+}
+
+@media screen and (min-width:700px) {
+    .section-wrapper {
+        gap: 2.5rem;
+    }
+    .container-gallery,
+    .container-gallery img {
+        height: 30rem;
+    } 
+}
+
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left:50%;
+    color: rgb(252, 249, 249);
+    font-size: 2rem;
+    font-family: 'Roboto Slab', serif;
+    text-transform: uppercase;
+    user-select: none;
+}
+
+.second-section-wrapper {
+    width: 100%;
+    background-color: #eee;
+    padding: 2em 3em;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    vertical-align: baseline;
+    justify-content: space-around;
+    
+}
+
+
+.section2-container2 {
+    margin: 0;
+    padding: 0;
+    display: block;
+    box-sizing: inherit;
+    background-color: #eee;
+    width:100%;
+}
+
+.section2-container1 {
+    margin: 0;
+    padding: 0;
+    display: block;
+    box-sizing: inherit;
+    order: 1;
+    background-color: #eee;
+    width:100%;
+}
+
+@media screen and (min-width:700px) {
+    .section2-container2 {
+        margin: 0;
+        padding: 0;
+        display: block;
+        box-sizing: inherit;
+        background-color: #eee;
+        width:calc(66% - 3em);
+    }
+    .section2-container1 {
+        margin: 0;
+        padding: 0;
+        display: block;
+        box-sizing: inherit;
+        order: 1;
+        background-color: #eee;
+        width:calc(33% - 3em);
+        padding-right: 4em;
+
+}
+}
+
+.section2-container2 h2,
+.section2-container1 h2 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.4em;   
+    font-weight: 600;
+    color: rgb(39, 38, 38);
+    text-transform: uppercase;
+    padding-bottom: 1.2em;
+}
+
+
+.section2-container1 a {
+    display: inline-block;
+    background-color: transparent;
+    border: solid 1px #8b8989;
+    border-radius: 10px;
+    width: 3em;
+    height: 3em;
+    text-align: center;
+    line-height: 3em;
+    color: inherit;
+    margin-left: 1em;
+    margin-bottom: 1em;
+}
+
+.forms {
+    display: block;
+}
+
+input, textarea {
+    width: 100%;
+    display: block;
+    padding: 2em 2em;
+    margin-bottom: 1.5em;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #8b8989;
+}
+
+@media screen and (min-width:700px) {
+    .forms {
+        display: flex;
+        flex-wrap: wrap;
+        gap:1em;
+        flex-direction: row;
+        width: 100%;
+    }
+    .forms input:nth-child(1),
+    .forms input:nth-child(2) {
+        flex: 0 1 calc(50% - 1em) ;
+    }
+
+    .forms textarea {
+       flex: 1 0 100%;
+    }
+}
+
+.section2-container2  button {
+    color: #eee;
+    background-color: rgb(39, 38, 38);
+    padding: 0.5em 1.5em;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.4em; 
+    text-transform: uppercase;
+    margin-bottom: 2em;
+    border: none;
+    
+}
+
+.section2-container2  button:hover {
+    background-color: rgb(11, 223, 22);
+}
+footer li{
+    display: flex;
+    list-style: none;
+    background-color: #eee;
+    color: #8b8989;
+    padding: 0.5em 0;
+
+}
+
+@media screen and (min-width:700px) {
+    footer {
+        width: 100%;
+        background-color: #eee;
+        padding-bottom: 3em;
+    }
+    
+    footer li {
+        display: inline-flex;
+        text-align: center;
+        padding-left: 3em;
+    }
+
+}
