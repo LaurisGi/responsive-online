@@ -6,6 +6,7 @@
 
 main {
     width: 100%;
+    background-color: rgb(250, 250, 250);
 }
 
 .section-wrapper {
@@ -151,6 +152,12 @@ main {
     color: inherit;
     margin-left: 1em;
     margin-bottom: 1em;
+}
+
+.section2-container1 a:hover {
+
+    color: rgb(255, 60, 174);
+    border: solid 1px rgb(255, 60, 174);
 }
 
 .forms {
